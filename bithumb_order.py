@@ -18,7 +18,7 @@ while True:
             print("New day! Creating a new file:", filename)
 
         # Bithumb API를 통해 orderbook 데이터 가져오기
-        response = requests.get('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+        response = requests.get('https://api.bithumb.com/public/orderbook/ETH_KRW/?count=5')
         book = response.json()
 
         data = book['data']
